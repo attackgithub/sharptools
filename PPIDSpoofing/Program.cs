@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 using System.Linq;
@@ -179,16 +179,9 @@ namespace PPIDSpoofing {
                     ref six,
                     ref pi
                 );
-                
-                // inject something here
-                //      QueueUserAPC
-                //      CreateRemoteThread
-                //      PE Injection
-                //      Process Hollowing
-                //      etc ...
             }
 
-            private static uint CheckIfWithinSession(uint parentPid, uint currentPid) {
+            public static uint CheckIfWithinSession(uint parentPid, uint currentPid) {
                 uint processSessionId = 0;
                 uint parentSessionId = 0;
                 ProcessIdToSessionId(currentPid, ref processSessionId);

