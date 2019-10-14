@@ -1,1 +1,1 @@
-# Offensive C# Tradecraft #
+Offensive C# Tradecraft
