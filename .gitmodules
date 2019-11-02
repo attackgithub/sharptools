@@ -1,0 +1,21 @@
+[submodule "password-attacks/SafetyKatz"]
+	path = password-attacks/SafetyKatz
+	url = https://github.com/GhostPack/SafetyKatz.git
+[submodule "password-attacks/SharpDPAPI"]
+	path = password-attacks/SharpDPAPI
+	url = https://github.com/GhostPack/SharpDPAPI.git
+[submodule "password-attacks/Rubeus"]
+	path = password-attacks/Rubeus
+	url = https://github.com/GhostPack/Rubeus.git
+[submodule "recon/SharpUp"]
+	path = recon/SharpUp
+	url = https://github.com/GhostPack/SharpUp.git
+[submodule "recon/Seatbelt"]
+	path = recon/Seatbelt
+	url = https://github.com/GhostPack/Seatbelt.git
+[submodule "misc/SharpDump"]
+	path = misc/SharpDump
+	url = https://github.com/GhostPack/SharpDump
+[submodule "execution/SharpWMI"]
+	path = execution/SharpWMI
+	url = https://github.com/GhostPack/SharpWMI.git
