@@ -1,12 +1,3 @@
-[submodule "password-attacks/SafetyKatz"]
-	path = password-attacks/SafetyKatz
-	url = https://github.com/GhostPack/SafetyKatz.git
-[submodule "password-attacks/SharpDPAPI"]
-	path = password-attacks/SharpDPAPI
-	url = https://github.com/GhostPack/SharpDPAPI.git
-[submodule "password-attacks/Rubeus"]
-	path = password-attacks/Rubeus
-	url = https://github.com/GhostPack/Rubeus.git
 [submodule "recon/SharpUp"]
 	path = recon/SharpUp
 	url = https://github.com/GhostPack/SharpUp.git
@@ -19,3 +10,30 @@
 [submodule "execution/SharpWMI"]
 	path = execution/SharpWMI
 	url = https://github.com/GhostPack/SharpWMI.git
+[submodule "credentials/SafetyKatz"]
+	path = credentials/SafetyKatz
+	url = https://github.com/GhostPack/SafetyKatz.git
+[submodule "credentials/SharpDPAPI"]
+	path = credentials/SharpDPAPI
+	url = https://github.com/GhostPack/SharpDPAPI.git
+[submodule "credentials/Rubeus"]
+	path = credentials/Rubeus
+	url = https://github.com/GhostPack/Rubeus.git
+[submodule "credentials/KeeThief"]
+	path = credentials/KeeThief
+	url = https://github.com/HarmJ0y/KeeThief.git
+[submodule "post-exploitation/SharpUp"]
+	path = post-exploitation/SharpUp
+	url = https://github.com/GhostPack/SharpUp.git
+[submodule "post-exploitation/Seatbelt"]
+	path = post-exploitation/Seatbelt
+	url = https://github.com/GhostPack/Seatbelt.git
+[submodule "post-exploitation/Watson"]
+	path = post-exploitation/Watson
+	url = https://github.com/rasta-mouse/Watson.git
+[submodule "recon/SharpHound"]
+	path = recon/SharpHound
+	url = https://github.com/BloodHoundAD/SharpHound.git
+[submodule "recon/FOCA"]
+	path = recon/FOCA
+	url = https://github.com/ElevenPaths/FOCA.git
