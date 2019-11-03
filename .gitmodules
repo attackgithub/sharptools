@@ -37,3 +37,15 @@
 [submodule "recon/FOCA"]
 	path = recon/FOCA
 	url = https://github.com/ElevenPaths/FOCA.git
+[submodule "Sharp-Suite"]
+	path = Sharp-Suite
+	url = https://github.com/FuzzySecurity/Sharp-Suite.git
+[submodule "post-exploitation/SharpSploit"]
+	path = post-exploitation/SharpSploit
+	url = https://github.com/cobbr/SharpSploit.git
+[submodule "evasion/nps"]
+	path = evasion/nps
+	url = https://github.com/Ben0xA/nps.git
+[submodule "credentials/NtdsAudit"]
+	path = credentials/NtdsAudit
+	url = https://github.com/Dionach/NtdsAudit.git
